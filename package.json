@@ -12,12 +12,15 @@
   "dependencies": {
     "@stripe/stripe-js": "^2.4.0",
     "@supabase/supabase-js": "^2.39.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
     "jspdf": "^2.5.1",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.22.3",
+    "stripe": "^17.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

@@ -10,16 +10,14 @@ export function TicketOptions() {
   }>(null);
 
   const ticketOptions = [
-    { amount: 1, price: 5, bonus: 0, popular: false },
-    { amount: 5, price: 25, bonus: 5, popular: true },
-    { amount: 20, price: 100, bonus: 20, popular: false },
+    { amount: 20, price: 100, bonus: 20, popular: true },
     { amount: 50, price: 250, bonus: 50, popular: false }
   ];
 
   return (
     <>
       <Toaster position="top-center" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {ticketOptions.map((option, index) => (
           <div
             key={index}
