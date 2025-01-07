@@ -1,112 +1,84 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useRef, useState, useEffect } from 'react';
+import { Pause, Play, Volume2, VolumeX } from 'lucide-react';
 
 export function ImageGallery() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(false);
+  const [volume, setVolume] = useState(1);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-  const images = [
-    {
-      url: "https://images.unsplash.com/photo-1674749960478-dc2fcda41f6f",
-      caption: "Front View"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1491921125492-f0b9c835b699",
-      caption: "Interior"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1632584028306-adc0a9d5a9b4",
-      caption: "Rear View"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1670496137552-340a104a7ead",
-      caption: "Side Profile"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1652509525608-6b44097ea5a7",
-      caption: "Wheels"
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.volume = volume;
+      video.muted = isMuted;
     }
-  ];
+  }, [volume, isMuted]);
 
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
+  const toggleMute = () => {
+    setIsMuted(prev => !prev);
   };
 
-  const prevImage = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newVolume = parseFloat(e.target.value);
+    setVolume(newVolume);
+    setIsMuted(newVolume === 0);
+  };
+
+  const togglePlayPause = () => {
+    const video = videoRef.current;
+    if (video) {
+      if (isPlaying) {
+        video.pause();
+      } else {
+        video.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
   };
 
   return (
-    <div className="relative">
-      <div className="grid grid-cols-4 gap-4 h-screen p-4">
-        <div className="col-span-2 row-span-2 relative group">
-          <img
-            src={images[currentIndex].url}
-            className="w-full h-full object-cover cursor-pointer rounded-xl shadow-lg"
-            alt={images[currentIndex].caption}
-            onClick={() => setIsModalOpen(true)}
+    <div className="relative h-full w-full">
+      <video
+        ref={videoRef}
+        className="w-full h-full object-cover"
+        loop
+        autoPlay
+        playsInline
+        muted={isMuted}
+      >
+        <source src="https://i.imgur.com/cunjRHj.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute top-4 left-4 z-50 flex items-center space-x-4">
+        <button
+          onClick={togglePlayPause}
+          className="bg-white/80 p-2 rounded-full hover:bg-white transition-colors transform hover:scale-110 active:scale-90"
+          aria-label={isPlaying ? "Pause video" : "Play video"}
+        >
+          {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
+        </button>
+        <div className="flex items-center space-x-2 bg-black bg-opacity-50 rounded-full p-2">
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.1"
+            value={volume}
+            onChange={handleVolumeChange}
+            className="w-20 h-1 bg-white rounded-lg appearance-none cursor-pointer"
+            aria-label="Adjust volume"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-between p-4 rounded-xl">
-            <button
-              onClick={prevImage}
-              className="bg-white/80 p-2 rounded-full hover:bg-white transition-colors"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={nextImage}
-              className="bg-white/80 p-2 rounded-full hover:bg-white transition-colors"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          </div>
+          <button
+            onClick={toggleMute}
+            className="bg-white/80 p-2 rounded-full hover:bg-white transition-colors transform hover:scale-110 active:scale-90"
+            aria-label={isMuted ? "Unmute" : "Mute"}
+          >
+            {isMuted ? <VolumeX className="w-6 h-6" /> : <Volume2 className="w-6 h-6" />}
+          </button>
         </div>
-        {images.slice(1, 5).map((image, index) => (
-          <div key={index} className="relative group overflow-hidden rounded-xl shadow-lg">
-            <img
-              src={image.url}
-              className="w-full h-full object-cover cursor-pointer transform group-hover:scale-105 transition-transform duration-300"
-              alt={image.caption}
-              onClick={() => {
-                setCurrentIndex(index + 1);
-                setIsModalOpen(true);
-              }}
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
-          </div>
-        ))}
       </div>
-
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center"
-             onClick={() => setIsModalOpen(false)}>
-          <div className="relative max-w-4xl mx-auto">
-            <img
-              src={images[currentIndex].url}
-              className="max-h-[80vh] w-auto rounded-xl shadow-2xl"
-              alt={images[currentIndex].caption}
-            />
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                prevImage();
-              }}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white transition-colors"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                nextImage();
-              }}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white transition-colors"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
+

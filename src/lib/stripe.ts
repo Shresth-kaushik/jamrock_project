@@ -1,7 +1,7 @@
 import { loadStripe } from '@stripe/stripe-js';
 import { STRIPE_SECRET_KEY } from '../config';
 
-const STRIPE_PUBLIC_KEY = 'pk_test_51QGMohDzGrTg2BBIKnezqhLOq7SdbLHPnJFXKQj11xUNisxuHxyIsZKn86mUikD5xCxXvjMg9WgeSC8fjGqDOpT100jrarEsL0';
+const STRIPE_PUBLIC_KEY = 'pk_live_51M0RtXJvWxu1BuxDcS7xTtaUl8waTDAWTyEkbFFOkN9xj5EQmgycZ8wappE71k1UW0aPvanNHGfDDYsDVGqHHXZF00lehJMJvi';
 export const stripe = loadStripe(STRIPE_PUBLIC_KEY);
 
 interface CreatePaymentSessionParams {

@@ -1,0 +1,56 @@
+declare -gx LANG=en_US.UTF-8
+declare -gx REPL_LANGUAGE=nix
+declare -gx REPLIT_DOMAINS=23cff8a9-c588-4af3-a3e4-97161876e278-00-xphxcfzbue6h.spock.replit.dev
+declare -gx REPLIT_LD_AUDIT=/nix/store/n5x1kgbz8zjh63ymsijbislyi1n1hir6-replit_rtld_loader-1/rtld_loader.so
+declare -gx REPL_PUBKEYS='{"crosis-ci":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:1":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","crosis-ci:latest":"7YlpcYh82oR9NSTtSYtR5jDL4onNzCGJGq6b+9CuZII=","prod":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:1":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","prod:2":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:3":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:4":"8uGN+vfszlnV93/HCSHlVLG0xddMlPkir1Ni4JKT4+w=","prod:5":"9+MCOSHQSQlcodXoot8dC8NLhc862nLkx1/VMsbY2h8=","prod:latest":"tGsjlu/BJvWTgvMaX7acuUb7AO1dXOrRiuk7y083RFE=","vault-goval-token":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:1":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E=","vault-goval-token:latest":"D5jJoMx1Ml54HM92NLgXl+MzptwDqbSsfyFG6f52g9E="}'
+declare -gx REPL_ID=23cff8a9-c588-4af3-a3e4-97161876e278
+declare -gx PROMPT_DIRTRIM=2
+declare -gx XDG_CONFIG_HOME=/home/runner/jam-rock-raffle-final/.config
+declare -gx NIX_PS1='\[\033[01;34m\]\w\[\033[00m\]\$ '
+declare -gx REPLIT_ENVIRONMENT=production
+declare -gx REPLIT_CLUSTER=spock
+declare -gx DIRENV_CONFIG=/etc/direnv
+declare -gx REPLIT_BASHRC=/nix/store/1dixvnrbgnmg49kwfqfd5by5kvagif3z-replit-bashrc/bashrc
+declare -gx DOCKER_CONFIG=/home/runner/jam-rock-raffle-final/.config/docker
+declare -gx REPL_IMAGE=gcr.io/marine-cycle-160323/nix:bf8590a3e2f0a8b70b7ca175eeed9074dffbfca9
+declare -gx DISPLAY=:0
+declare -gx SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPLIT_SUBCLUSTER=interactive
+declare -gx NIX_PATH=nixpkgs=/home/runner/.nix-defexpr/channels/nixpkgs-stable-24_05:/home/runner/.nix-defexpr/channels
+declare -gx REPLIT_PID1_FLAG_REPLIT_RTLD_LOADER=1
+declare -gx NIX_PROFILES='/nix/var/nix/profiles/default /home/runner/.nix-profile'
+declare -gx REPL_OWNER_ID=25845337
+declare -gx REPLIT_RIPPKGS_INDICES=/nix/store/72dfj6fpcs0xzy908kb6dkdmh7n4gjia-rippkgs-indices
+declare -gx USER=runner
+declare -gx REPLIT_NIX_CHANNEL=stable-24_05
+declare -gx REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPLIT_CLI=/nix/store/nrrx4a67pir4nbd89hgdy23na8ligpdk-pid1-0.0.1/bin/replit
+declare -gx GIT_EDITOR=replit-git-editor
+declare -gx REPLIT_RTLD_LOADER=1
+declare -gx HOSTNAME=a082f5fc1dd4
+declare -gx REPLIT_PID1_VERSION=0.0.0-295a3ef
+declare -gx REPLIT_DEV_DOMAIN=23cff8a9-c588-4af3-a3e4-97161876e278-00-xphxcfzbue6h.spock.replit.dev
+declare -gx npm_config_prefix=/home/runner/jam-rock-raffle-final/.config/npm/node_global
+declare -gx XDG_CACHE_HOME=/home/runner/jam-rock-raffle-final/.cache
+declare -gx XDG_DATA_HOME=/home/runner/jam-rock-raffle-final/.local/share
+declare -gx GIT_ASKPASS=replit-git-askpass
+declare -gx NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+declare -gx REPL_IDENTITY=v2.public.Q2lReU0yTm1aamhoT1Mxak5UZzRMVFJoWmpNdFlUTmxOQzA1TnpFMk1UZzNObVV5TnpnU0QxTm9jbVZ6ZEdoTFlYVnphR2xyTVJvVmFtRnRMWEp2WTJzdGNtRm1abXhsTFdacGJtRnNJaVF5TTJObVpqaGhPUzFqTlRnNExUUmhaak10WVRObE5DMDVOekUyTVRnM05tVXlOemc0MmJ5cERGb1VDZ1Z6Y0c5amF4SUxhVzUwWlhKaFkzUnBkbVU9tldxQD-yWfaNlQlI6Hqf1g2xGl_Z528T1a0xkpatfGZ17pS3O2hF9OoEnVTyqGxsidQGOh3v8U_TV0yF8L8sBQ.R0FFaUJtTnZibTFoYmhLYkNIWXlMbkIxWW14cFl5NVJNbVF6VTFSb1dsVklhREZrTVd4U1pVVTFiVlZIT1VKVVZrNUZVVmR3UWtzeFFuQk9NRXB2VWtkamVVOURkRzVSV0doMlVUQmtRbFpYUmt0YU1qbHlWRmR3VDJGc2NIUlhWRkphVmtkME1GZFljRlpPUlRsRVRVUkNXbFl4YkRaVVJtUkdaV3h3VlZWWVVsQldSMDQwVkcxd1JrNUZOVFpYYlhoT1lXMU5NRkl5YUVaVk1GRjRWRzA1YW1KV1dqWmFSV1J2VkVac1dWWnVjR2hTTW5oNVZGWktkbEpyT1U5aVZHaDRWVmhrYUZGdWJFcFNiVTE2VVc1YVdrMXVUbWhTUms1MlZFZEdXRTVVUW1GWFJYQnZWMVJPVTJOSFVuUldWMnhQVmpOT05WUkhOVU5OVm14MFpVaENXbVZVVmxGVVZXaExWRWRPV0ZkcVdsTlRSVlY1V1RGb1NrMHlTWGxQVnpsVFVsaFNURmRXYUhkTmJFbDNXa1JXVjFKVmJ6SmFSM2MxV1ZaT1NGUnJWbE5oZWxaR1ZEQlpOV1ZWTlZsWGExcG5Tek5rUVhkVU5FNDJNbE16Vkc1eE5FNXZkVWhNUkZwMVZHTTRTVmhqVmpKa1JrVm5NVlp1YkZocU5HdFJYeTFhY25Oc2IzUnFWMUJ6Y1dvMlV6aENkbXhrWm1weFVtOWtWbmxGZEhkWVlsUm5hRUZKTGxJd1JrWmhWVXAwVkc1YWFXSlVSbTlaYldoTldXdEdkVmRZYkUxaWEwbDRWMWN4TkdOR2JEVk9Wa3BPWWxaSk1sWlVSbXROUjFaMFUyeGFWR0p1UWxkV2JURTBWVEZTY2xWdFJrNVdia0pYVlRKMFQxWkdXbGxoUlZaV1pXdEtjbFZxUVRGVFZrWnlVMnhhVGxKc2NGTldiWEJQV1ZkU1YySXphRk5pVjJoVFZtcEtiMlJXVmxoa1IzUnBZa1UxV0ZsclZrOVdiVXBWWWtWV1ZtRnJTa2hhUjNoelZteEtkVkpzU2xkV1dFSktWakp3UTJNeFpITlNiR2hvVTBad1UxUlZaRk5STVZwSFdrVmtVbUpWV2tsWGExVjRWVEF4ZEZWcmRGZE5WbHBVVlZSS1NtUXhVbkpoUmtwWFlURndkbFpXV210aU1rcHpWRzVLYVZORldsaFpiWFIzVkRGc1YxVnNaRTVOV0VKSVYydFdNR0ZyTVhKWGJHeFhVbTFvV0ZaRVJtRmtSMVpKWTBaa1YySldTa2xXUmxKTFZESk5lVk5xV2xaaGVteFlWRmQ0UzJJeFdYbE5WRkpVVFd0YVIxUldWbXRXUjBwR1YyeGFXbFo2UlRCWFZscHpUbXhHVlZKdGNHbFNXRUkyVmtSR1YxbFhSWGxUYkd4V1ZrVmFWMWxyV21GamJIQklaVVZhYkZKdVFrWldNakYzWVVkRmVHTkhPVmRoYTFwVVZYcEdUbVZHV25OVGJFWlhVa1ZLTTFZeWRHRlhiVTUwWTBVeFVGZEZOSHBhUlZaYVRsWndSVkpZVW1saVZGWlJWREJrWVZWdFNsaGhSRXBVVWxad2VGWnJWbkprUjFKRllVVndhV0pXY0ZGWFJFbDRWbFV4ZEZsNlVtcFhTRUpHVld0a1ZrNUdXa1ZpUmxKb1RWWktObGR0ZUc5aVYxWnlZbnBDV0ZaVk1UWlhiWE4zWld4a1ZrNVlTbFJXUjFKWlYxZHJkMDVXU25KVmJUbFBZVlJHVEZScVNUVlNSWGh6VTFoa1UyRXhjRzlXYkZaM1RVWmFTRTVYUm1oV01IQldWVzB3TlZkdFNsaFZha3BXWVd0d1VGVXhXazlrVm1SMFVteE9VMlZ0WnpBPQ
+declare -gx REPL_IDENTITY_KEY=k2.secret.cNEut7ojSC1PnOmYUa935msLBHRh4tbt8yxxF8PkvQE7Ssqp_MOrqqvuiiEMolrO8YbJMHO_9kdwMU0Pz-vm8Q
+declare -gx COLORTERM=truecolor
+read -r _new_path <<< "/nix/store/r2wrscmjzn4f2f7wk7q2ms2h96mjwzv7-npx/bin:/home/runner/jam-rock-raffle-final/.config/npm/node_global/bin:/home/runner/jam-rock-raffle-final/node_modules/.bin:/nix/store/rrz8cqhldyl17bbs60g7d8vbaadkxc40-nodejs-20.18.1-wrapped/bin:/nix/store/2l0rhsa5pjdg5j0id60f0w5lw6r9g4rp-bun-1.1.40/bin:/nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin:/nix/store/jcgdksj946l5l42c2y9ks2l4g6n74h3f-yarn-1.22.22/bin:/nix/store/2s17mrby0ph00z22rkabfs9vzpzx1r70-prettier-3.3.3/bin:/nix/store/jzkjkfw0qv2v2bk5zpj10l803c8zqv88-pid1/bin:/nix/store/bnpr96a5svv8zrk490x034sncgia15nb-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+#PATH=/nix/store/r2wrscmjzn4f2f7wk7q2ms2h96mjwzv7-npx/bin:/home/runner/jam-rock-raffle-final/.config/npm/node_global/bin:/home/runner/jam-rock-raffle-final/node_modules/.bin:/nix/store/rrz8cqhldyl17bbs60g7d8vbaadkxc40-nodejs-20.18.1-wrapped/bin:/nix/store/2l0rhsa5pjdg5j0id60f0w5lw6r9g4rp-bun-1.1.40/bin:/nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin:/nix/store/jcgdksj946l5l42c2y9ks2l4g6n74h3f-yarn-1.22.22/bin:/nix/store/2s17mrby0ph00z22rkabfs9vzpzx1r70-prettier-3.3.3/bin:/nix/store/jzkjkfw0qv2v2bk5zpj10l803c8zqv88-pid1/bin:/nix/store/bnpr96a5svv8zrk490x034sncgia15nb-replit-runtime-path/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+if [ -e "/run/replit/env/last" ]; then read -r _last_path < <(\grep '^#PATH=' /run/replit/env/last | cut -f 2 -d =); fi
+_user_components="$(\tr : $'\n' <<< "${PATH:-}" |\grep -xv -f <(\tr : $'\n' <<< "${_last_path}") |\tr $'\n' :)"
+declare -gx PATH="${_user_components}${_new_path}"
+declare -gx NIXPKGS_ALLOW_UNFREE=1
+declare -gx __EGL_VENDOR_LIBRARY_FILENAMES=/nix/store/141m63y55hh07jcry2lk5w2x5x5bg0b0-mesa-24.2.6-drivers/share/glvnd/egl_vendor.d/50_mesa.json
+declare -gx REPLIT_PID1_FLAG_NIXMODULES_BEFORE_REPLIT_NIX=1
+declare -gx REPLIT_DB_URL=https://kv.replit.com/v0/eyJhbGciOiJIUzUxMiIsImlzcyI6ImNvbm1hbiIsImtpZCI6InByb2Q6MSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb25tYW4iLCJleHAiOjE3MzYzMDgyMDgsImlhdCI6MTczNjE5NjYwOCwiZGF0YWJhc2VfaWQiOiIyM2NmZjhhOS1jNTg4LTRhZjMtYTNlNC05NzE2MTg3NmUyNzgifQ.2dxTdXu4LLMRGuTohY_eYIXC0f6lzE2zOfMSoyeji6Wt0_An2MwirLDOC0xU-tU3Q2s9FJOIgHdF94r5vlyTng
+declare -gx LIBGL_DRIVERS_PATH=/nix/store/141m63y55hh07jcry2lk5w2x5x5bg0b0-mesa-24.2.6-drivers/lib/dri
+declare -gx REPL_SLUG=jam-rock-raffle-final
+declare -gx REPL_HOME=/home/runner/jam-rock-raffle-final
+declare -gx DENO_TLS_CA_STORE=system
+declare -gx HOME=/home/runner
+declare -gx LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+declare -gx REPL_OWNER=ShresthKaushik1
