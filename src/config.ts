@@ -1,0 +1,5 @@
+export const STRIPE_SECRET_KEY = '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';
+export const SUPABASE_URL = 'https://wdzcrmjkardnxllwinml.supabase.co';
+export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkemNybWprYXJkbnhsbHdpbm1sIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMDY2NTk5NywiZXhwIjoyMDQ2MjQxOTk3fQ.ng6qbLbDaeeqwSjRoSNKCKOVN_WeB_ZimGP0r3oCy3c';
+
+
