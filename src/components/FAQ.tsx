@@ -6,7 +6,12 @@ const faqs = [
   {
     question: "How does the giveaway Event work?",
     answer:
-      "Participants can purchase tickets through our secure platform. Each ticket represents one entry into the giveaway event. The more tickets you purchase, the higher your chances of winning.",
+      "The giveaway works by purchasing a ticket to Jamrock Spring-break Event, a $100 Regular Ticket gets you 20 entries and $250 VIP Ticket gets you 100 entries.",
+  },
+  {
+    question: "How to Enter Our Giveaway?",
+    answer:
+    "To participate in our exciting giveaway, simply purchase a ticket to  the Jamrock Spring-break Event Here's how the entries work : $100 Regular Ticket: 20 entries ⁠$250 VIP Ticket: 100 entries Buy your ticket now and increase your chances of winning!"
   },
   {
     question: "When will the winner be announced?",
